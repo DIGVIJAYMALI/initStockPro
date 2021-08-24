@@ -10,7 +10,7 @@ import pandas as pd
 def get_stock_info(name):
     # Use a breakpoint in the code line below to debug your script.
     stock = yf.Ticker(name)
-    return stock.history(period="10y")
+    return stock.history(period="3y")
 
 
 # Press the green button in the gutter to run the script.
@@ -109,8 +109,16 @@ def calculate_profit(total_amount_invested, total_shares, closed_price):
     profit = round(closed_price * total_shares - total_amount_invested,2)
     print("profit ", profit)
     print("============== ")
-    return profit
+    return profit, get_change(closed_price * total_shares, total_amount_invested )
 
+
+def get_change(current, previous):
+    if current == previous:
+        return 0
+    try:
+        return (abs(current - previous) / previous) * 100.0
+    except ZeroDivisionError:
+        return float('inf')
 
 if __name__ == '__main__':
     df_stock_info = get_stock_info('SCHD')
@@ -121,11 +129,17 @@ if __name__ == '__main__':
     df.reset_index(inplace=True)
 
     print("calculate_dollar_cost ")
-    total_amount_invested, total_shares, days_count = calculate_dollar_cost(df, 30)
-    profit = calculate_profit(total_amount_invested, total_shares, df['Close'].iloc[-1])
+    total_amount_invested, total_shares, days_count = calculate_dollar_cost(df, 15)
+    profit, percent_change = calculate_profit(total_amount_invested, total_shares, df['Close'].iloc[-1])
 
     print("divident_reinvestment")
-    total_amount, total_shares, days_count = divident_reinvestment(df, 30)
-    profit1 = calculate_profit(total_amount_invested, total_shares, df['Close'].iloc[-1])
+    total_amount, total_shares, days_count = divident_reinvestment(df, 15)
+    profit1, percent_change2 = calculate_profit(total_amount_invested, total_shares, df['Close'].iloc[-1])
+
+    print("percent_change direct ", get_change(df['Close'].iloc[-1], df['Close'].iloc[0]))
+
+    print("percent_change ", percent_change)
+    print("percent_change ", percent_change2)
+
 
     print("difference ", round(profit1 - profit, 2))
