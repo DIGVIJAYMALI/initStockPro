@@ -7,7 +7,7 @@ import math as math
 def get_stock_info(name):
     # Use a breakpoint in the code line below to debug your script.
     stock = yf.Ticker(name)
-    return stock.history(period="5y")
+    return stock.history(period="1y")
 
 def get_change(current, previous):
     if current == previous:
@@ -40,22 +40,9 @@ def calculate_dollar_cost_with_min_average_new(df_stock_info, amount, is_dividan
             divident += (total_shares * row['Dividends'])
             total_dividant += divident
             share2 = divident / closed
-            print("Date of Dividends")
-            print(count)
             count+=1
             total_shares += share2
 
-
-        if index == 1:
-            share = amount / closed
-            total_amount += amount
-            total_shares += share
-            five_day_stock += share
-            five_day_amount += amount
-            days_count=1
-            weekly_budget -= amount
-            #print(row['Date'])
-            continue
         if math.isnan(row['5_day_avg']):
             share = amount / closed
             total_amount += amount
@@ -96,7 +83,7 @@ def calculate_dollar_cost_with_min_average_new(df_stock_info, amount, is_dividan
             weekly_budget -= amount
             days_count += 1
 
-            if closed < our_five_day_avg*1.1 and weekly_budget > 0:
+            if closed < our_five_day_avg * 0.8 and weekly_budget > 0:
                 share = (weekly_budget) / closed
                 total_amount += (weekly_budget)
                 total_shares += share
@@ -109,7 +96,7 @@ def calculate_dollar_cost_with_min_average_new(df_stock_info, amount, is_dividan
     print("total_shares", round(total_shares, 2))
     print("days_count", days_count)
     print("days_not_invested", days_not_invested)
-    print("Price per share ", (total_amount+total_dividant) / total_shares)
+    print("Price per share ", total_amount / total_shares)
     print("==========================")
 
     return total_amount, total_shares, days_count
@@ -337,14 +324,18 @@ def divident_reinvestment(df_stock_info, amount):
     print("total_amount divident_reinvestment", round(total_amount,2))
     print("total_shares divident_reinvestment", round(total_shares,2))
     print("days_count divident_reinvestment", days_count)
-    print("Price per share ", (total_amount+total_dividant)/total_shares )
+    print("Price per share ", total_amount/total_shares )
     return total_amount, total_shares, days_count
 
 
 def calculate_profit(total_amount_invested, total_shares, closed_price):
     profit = round(closed_price * total_shares - total_amount_invested,2)
+    percent_change_amount = get_change(closed_price * total_shares, total_amount_invested)
+
     print("profit ", profit)
+    print("percent_change_amount ", percent_change_amount)
     print("============== ")
+
     return profit, get_change(closed_price * total_shares, total_amount_invested )
 
 
@@ -365,7 +356,7 @@ Input_column = {
 
 
 if __name__ == '__main__':
-    df_stock_info = get_stock_info('VICI')
+    df_stock_info = get_stock_info('VTI')
     amount = 5
     #print(df_stock_info.columns)
     print(df_stock_info)
@@ -390,17 +381,20 @@ if __name__ == '__main__':
     print("last price")
     print(df['Close'].iloc[-1])
 
-    print("calculate_dollar_cost ")
-    total_amount_invested, total_shares, days_count = calculate_dollar_cost(df, amount)
-    profit, percent_change = calculate_profit(total_amount_invested, total_shares, df['Close'].iloc[-1])
-
-    #print("calculate_dollar_cost_with_min_average ")
-    #total_amount_invested, total_shares, days_count = calculate_dollar_cost_with_min_average_new(df, 15, True)
+    #print("calculate_dollar_cost ")
+    #total_amount_invested, total_shares, days_count = calculate_dollar_cost(df, amount)
     #profit, percent_change = calculate_profit(total_amount_invested, total_shares, df['Close'].iloc[-1])
 
+    #print("calculate_dollar_cost_with_min_average ")
+    #total_amount_invested, total_shares, days_count = calculate_dollar_cost_with_min_average_new(df, amount, True)
+    #profit, percent_change = calculate_profit(total_amount_invested, total_shares, df['Close'].iloc[-1])
+
+    print("============== ")
     print("divident_reinvestment")
+    print("============== ")
     total_amount, total_shares, days_count = divident_reinvestment(df, amount)
-    profit1, percent_change2 = calculate_profit(total_amount_invested, total_shares, df['Close'].iloc[-1])
+    print("============== ")
+    profit1, percent_change2 = calculate_profit(total_amount, total_shares, df['Close'].iloc[-1])
 
     #print("percent_change direct ", get_change(df['Close'].iloc[-1], df['Close'].iloc[0]))
 
