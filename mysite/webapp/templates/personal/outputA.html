@@ -1,0 +1,139 @@
+<!doctype html>
+{%	extends "personal/centerAnalysisPage.html"	%}
+
+{% block content %}
+<html>
+<head>
+{% load static %}
+	   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+
+ <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_DATA" aria-expanded="false" aria-controls="collapse_DATA">
+   SHOW DATA
+  </button>
+</p>
+<div class="collapse" id="collapse_DATA">
+  <div class="card card-body">
+  <br/>
+	{{content_graph | safe}}
+	<br/>
+		{{content_dataframe | safe}}
+
+	<br/>
+  </div>
+</div>
+ <hr>
+	<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_GOOGL" aria-expanded="false" aria-controls="collapse_GOOGL">
+   Alphabet
+  </button>
+</p>
+<div class="collapse" id="collapse_GOOGL">
+  <div class="card card-body">
+   Google - Alphabet Class A
+  </div>
+</div>
+<hr>
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_MSFT" aria-expanded="false" aria-controls="collapse_MSFT">
+     Microsoft
+  </button>
+</p>
+<div class="collapse" id="collapse_MSFT">
+  <div class="card card-body">
+   Microsoft
+  </div>
+</div>
+<hr>
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_INTC" aria-expanded="false" aria-controls="collapse_INTC">
+     Intel
+  </button>
+</p>
+<div class="collapse" id="collapse_INTC">
+  <div class="card card-body">
+   Intel Corp.
+  </div>
+</div>
+<hr>
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_TSLA" aria-expanded="false" aria-controls="collapse_TSLA">
+     Tesla
+  </button>
+</p>
+<div class="collapse" id="collapse_TSLA">
+  <div class="card card-body">
+   Tesla
+  </div>
+</div>
+<hr>
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_AAPL" aria-expanded="false" aria-controls="collapse_AAPL">
+     Apple
+  </button>
+</p>
+<div class="collapse" id="collapse_AAPL">
+  <div class="card card-body">
+   Apple
+  </div>
+</div>
+<hr>
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_AMZN" aria-expanded="false" aria-controls="collapse_AMZN">
+     Amazon
+  </button>
+</p>
+<div class="collapse" id="collapse_AMZN">
+  <div class="card card-body">
+   Amazon
+  </div>
+</div>
+<hr>
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_JNJ" aria-expanded="false" aria-controls="collapse_JNJ">
+     Johnson & Johnson
+
+  </button>
+</p>
+<div class="collapse" id="collapse_JNJ">
+  <div class="card card-body">
+   Johnson & Johnson
+
+  </div>
+</div>
+<hr>
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_BABA" aria-expanded="false" aria-controls="collapse_BABA">
+    Alibaba
+
+  </button>
+</p>
+<div class="collapse" id="collapse_BABA">
+  <div class="card card-body">
+   Alibaba
+
+  </div>
+</div>
+<hr>
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_VICI" aria-expanded="false" aria-controls="collapse_VICI">
+    VICI
+
+  </button>
+</p>
+<div class="collapse" id="collapse_VICI">
+  <div class="card card-body">
+   VICI Properties
+
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+		</body>
+	</html>
+{% endblock %}

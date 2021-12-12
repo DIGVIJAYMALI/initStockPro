@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="26e60678-45cc-4818-b5cb-27d059789b73" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="224CyEyIRIXw2RRuAWTv2fkb6h8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.techStockData">
+    <configuration name="stockAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mysite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/webapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/webapp/stockAnalysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="techStockData" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mysite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/webapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/webapp/techStockData.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="techStockViz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mysite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/webapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/webapp/techStockViz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.techStockData" />
+        <item itemvalue="Python.techStockViz" />
+        <item itemvalue="Python.stockAnalysis" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26e60678-45cc-4818-b5cb-27d059789b73" name="Default Changelist" comment="" />
+      <created>1639087724892</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639087724892</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="197" width="1071" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1639092359066">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="424" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3040.25.1440.875/0.25.1920.1008/-1600.25.1600.875@0.25.1920.1008" timestamp="1639087757144" />
+    <state x="424" y="197" width="1071" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3040.25.1440.875/0.25.1920.1055/-1600.25.1600.875@0.25.1920.1055" timestamp="1639092359066" />
+    <state x="684" y="336" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639091035734">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="684" y="336" key="#com.intellij.fileTypes.FileTypeChooser/-3040.25.1440.875/0.25.1920.1055/-1600.25.1600.875@0.25.1920.1055" timestamp="1639091035734" />
+    <state width="1899" height="271" key="GridCell.Tab.0.bottom" timestamp="1639274287815">
+      <screen x="0" y="25" width="1920" height="1008" />
+    </state>
+    <state width="1899" height="271" key="GridCell.Tab.0.bottom/-3040.25.1440.875/0.25.1920.1008/-1600.25.1600.875@0.25.1920.1008" timestamp="1639274287815" />
+    <state width="1899" height="271" key="GridCell.Tab.0.bottom/-3040.25.1440.875/0.25.1920.1055/-1600.25.1600.875@0.25.1920.1055" timestamp="1639255547143" />
+    <state width="1899" height="271" key="GridCell.Tab.0.center" timestamp="1639274287813">
+      <screen x="0" y="25" width="1920" height="1008" />
+    </state>
+    <state width="1899" height="271" key="GridCell.Tab.0.center/-3040.25.1440.875/0.25.1920.1008/-1600.25.1600.875@0.25.1920.1008" timestamp="1639274287813" />
+    <state width="1899" height="271" key="GridCell.Tab.0.center/-3040.25.1440.875/0.25.1920.1055/-1600.25.1600.875@0.25.1920.1055" timestamp="1639255547141" />
+    <state width="1899" height="271" key="GridCell.Tab.0.left" timestamp="1639274287811">
+      <screen x="0" y="25" width="1920" height="1008" />
+    </state>
+    <state width="1899" height="271" key="GridCell.Tab.0.left/-3040.25.1440.875/0.25.1920.1008/-1600.25.1600.875@0.25.1920.1008" timestamp="1639274287811" />
+    <state width="1899" height="271" key="GridCell.Tab.0.left/-3040.25.1440.875/0.25.1920.1055/-1600.25.1600.875@0.25.1920.1055" timestamp="1639255547140" />
+    <state width="1899" height="271" key="GridCell.Tab.0.right" timestamp="1639274287814">
+      <screen x="0" y="25" width="1920" height="1008" />
+    </state>
+    <state width="1899" height="271" key="GridCell.Tab.0.right/-3040.25.1440.875/0.25.1920.1008/-1600.25.1600.875@0.25.1920.1008" timestamp="1639274287814" />
+    <state width="1899" height="271" key="GridCell.Tab.0.right/-3040.25.1440.875/0.25.1920.1055/-1600.25.1600.875@0.25.1920.1055" timestamp="1639255547142" />
+    <state width="1899" height="335" key="GridCell.Tab.1.bottom" timestamp="1639246502815">
+      <screen x="0" y="25" width="1920" height="1008" />
+    </state>
+    <state width="1899" height="335" key="GridCell.Tab.1.bottom/-3040.25.1440.875/0.25.1920.1008/-1600.25.1600.875@0.25.1920.1008" timestamp="1639246502815" />
+    <state width="1899" height="335" key="GridCell.Tab.1.center" timestamp="1639246502814">
+      <screen x="0" y="25" width="1920" height="1008" />
+    </state>
+    <state width="1899" height="335" key="GridCell.Tab.1.center/-3040.25.1440.875/0.25.1920.1008/-1600.25.1600.875@0.25.1920.1008" timestamp="1639246502814" />
+    <state width="1899" height="335" key="GridCell.Tab.1.left" timestamp="1639246502813">
+      <screen x="0" y="25" width="1920" height="1008" />
+    </state>
+    <state width="1899" height="335" key="GridCell.Tab.1.left/-3040.25.1440.875/0.25.1920.1008/-1600.25.1600.875@0.25.1920.1008" timestamp="1639246502813" />
+    <state width="1899" height="335" key="GridCell.Tab.1.right" timestamp="1639246502814">
+      <screen x="0" y="25" width="1920" height="1008" />
+    </state>
+    <state width="1899" height="335" key="GridCell.Tab.1.right/-3040.25.1440.875/0.25.1920.1008/-1600.25.1600.875@0.25.1920.1008" timestamp="1639246502814" />
+    <state x="469" y="165" key="SettingsEditor" timestamp="1639093223468">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="469" y="165" key="SettingsEditor/-3040.25.1440.875/0.25.1920.1055/-1600.25.1600.875@0.25.1920.1055" timestamp="1639093223468" />
+    <state x="616" y="376" key="com.intellij.ide.util.TipDialog" timestamp="1639094104927">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="616" y="360" key="com.intellij.ide.util.TipDialog/-3040.25.1440.875/0.25.1920.1008/-1600.25.1600.875@0.25.1920.1008" timestamp="1639087729865" />
+    <state x="616" y="376" key="com.intellij.ide.util.TipDialog/-3040.25.1440.875/0.25.1920.1055/-1600.25.1600.828@0.25.1920.1055" timestamp="1639094104927" />
+    <state x="530" y="141" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1639270948120">
+      <screen x="0" y="25" width="1920" height="1008" />
+    </state>
+    <state x="530" y="141" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-3040.25.1440.875/0.25.1920.1008/-1600.25.1600.875@0.25.1920.1008" timestamp="1639270948120" />
+  </component>
+</project>
